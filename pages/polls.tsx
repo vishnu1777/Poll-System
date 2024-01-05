@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { PrismaClient } from "@prisma/client";
 import { Poll } from "@prisma/client";
 import PollCard from "../components/pollCard";
-import SiteFooter from "../components/footer";
+
 import { getTheme, setTheme } from "../lib/theme";
 import { FiMoon, FiSun } from "react-icons/fi";
 
@@ -130,7 +130,7 @@ export default function Polls(props: Props) {
               );
             })}
       </div>
-      <SiteFooter />
+    
     </div>
   );
 }

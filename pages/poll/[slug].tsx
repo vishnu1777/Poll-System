@@ -9,7 +9,6 @@ import { checkForUpVote } from "../../lib/checkForUpvote";
 import { Option, Poll } from "@prisma/client";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import SiteFooter from "../../components/footer";
 import Link from "next/link";
 
 // Instantiate it
@@ -209,7 +208,7 @@ export default function PollPage(props: Props) {
           {new Date(props?.poll?.createdAt).toLocaleTimeString()}
         </p>
       </div>
-      <SiteFooter />
+     
     </div>
   );
 }

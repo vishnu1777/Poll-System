@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { Props } from "../[slug]";
 import { Option } from "@prisma/client";
-import SiteFooter from "../../../components/footer";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -160,7 +160,7 @@ export default function Results({ poll, options }: Props) {
           {new Date(poll?.createdAt).toLocaleTimeString()}
         </p>
       </div>
-      <SiteFooter />
+      
     </div>
   );
 }

@@ -2,7 +2,6 @@ import { nanoid } from "nanoid";
 import axios from "axios";
 import PollForm from "../components/pollForm";
 import Link from "next/link";
-import SiteFooter from "../components/footer";
 import { setTheme, getTheme } from "../lib/theme";
 import { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
@@ -58,7 +57,7 @@ export default function Create() {
         </h1>
         <PollForm onSubmit={addPoll} redirectPath={`/poll/${id}`} />
       </div>
-      <SiteFooter />
+    
     </div>
   );
 }

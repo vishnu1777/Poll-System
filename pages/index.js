@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import SiteFooter from "../components/footer";
+
 import { useEffect, useState } from "react";
 import { setTheme, getTheme } from "../lib/theme";
 import { FiMoon, FiSun } from "react-icons/fi";
@@ -40,12 +40,9 @@ export default function Home() {
       </button>
       <div className="flex flex-col mt-3 justify-center items-center lg:w-2/3 md:w-2/3 w-full text-center">
         <h2 className="w-full mb-0 text-shadow-lg text-[4rem] lg:text-[5rem] md:text-[5rem] font-extrabold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-          oh my poll !
+          Your Poll
         </h2>
-        <p className="text-shadow-lg mt-0 text-emerald-700 dark:text-emerald-300">
-          create polls and ask others anything you want privately or publicly -{" "}
-          {`it's`} free!
-        </p>
+        
       </div>
       <div className="flex mt-3 gap-3 justify-center items-center lg:w-1/3 md:w-1/2 w-full text-center">
         <button
@@ -61,7 +58,7 @@ export default function Home() {
           see public polls
         </button>
       </div>
-      <SiteFooter />
+      
     </div>
   );
 }
